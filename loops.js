@@ -10,13 +10,21 @@ function forLoop(array) {
 }
 
 function whileLoop(n) {
-  while (n >= 0) {
-    n--;
-    
+  let countdown = n;
+
+    while (countdown > 0) {
+      console.log(--countdown)
+    }
+    return "done";
   }
-}
 
 function doWhileLoop(array) {
-  do { array.pop();
-  } while (maybeTrue() === true);
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+
+  do {
+    array.pop();
+  } while (array.length > -1 && maybeTrue());
+    return array;
 }
