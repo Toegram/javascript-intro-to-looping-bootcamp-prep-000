@@ -9,4 +9,8 @@ function forLoop(array) {
   return array;
 }
 
-function whi
+function whileLoop(n) {
+  while (n > 0) {
+    n--;
+  }
+}
